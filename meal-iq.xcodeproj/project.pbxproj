@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		85FB20B61FB2E41000EC0633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20B51FB2E41000EC0633 /* AppDelegate.swift */; };
-		85FB20B81FB2E41000EC0633 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20B71FB2E41000EC0633 /* ViewController.swift */; };
+		85FB20B81FB2E41000EC0633 /* menuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20B71FB2E41000EC0633 /* menuVC.swift */; };
 		85FB20BB1FB2E41000EC0633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FB20B91FB2E41000EC0633 /* Main.storyboard */; };
 		85FB20BD1FB2E41000EC0633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FB20BC1FB2E41000EC0633 /* Assets.xcassets */; };
 		85FB20C01FB2E41000EC0633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FB20BE1FB2E41000EC0633 /* LaunchScreen.storyboard */; };
+		85FB20CD1FB392F700EC0633 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20CC1FB392F700EC0633 /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85FB20B21FB2E41000EC0633 /* meal-iq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meal-iq.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FB20B51FB2E41000EC0633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85FB20B71FB2E41000EC0633 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85FB20B71FB2E41000EC0633 /* menuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuVC.swift; sourceTree = "<group>"; };
 		85FB20BA1FB2E41000EC0633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85FB20BC1FB2E41000EC0633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85FB20BF1FB2E41000EC0633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85FB20C11FB2E41000EC0633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FB20CC1FB392F700EC0633 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		85FB20B41FB2E41000EC0633 /* meal-iq */ = {
 			isa = PBXGroup;
 			children = (
+				85FB20C91FB391ED00EC0633 /* Controller */,
+				85FB20C81FB391E500EC0633 /* View */,
+				85FB20C71FB391DC00EC0633 /* Model */,
 				85FB20B51FB2E41000EC0633 /* AppDelegate.swift */,
-				85FB20B71FB2E41000EC0633 /* ViewController.swift */,
 				85FB20B91FB2E41000EC0633 /* Main.storyboard */,
 				85FB20BC1FB2E41000EC0633 /* Assets.xcassets */,
 				85FB20BE1FB2E41000EC0633 /* LaunchScreen.storyboard */,
 				85FB20C11FB2E41000EC0633 /* Info.plist */,
 			);
 			path = "meal-iq";
+			sourceTree = "<group>";
+		};
+		85FB20C71FB391DC00EC0633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85FB20C81FB391E500EC0633 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85FB20CC1FB392F700EC0633 /* MenuCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85FB20C91FB391ED00EC0633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85FB20B71FB2E41000EC0633 /* menuVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85FB20B81FB2E41000EC0633 /* ViewController.swift in Sources */,
+				85FB20B81FB2E41000EC0633 /* menuVC.swift in Sources */,
 				85FB20B61FB2E41000EC0633 /* AppDelegate.swift in Sources */,
+				85FB20CD1FB392F700EC0633 /* MenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
