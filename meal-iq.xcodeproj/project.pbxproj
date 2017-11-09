@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		85FB20B61FB2E41000EC0633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20B51FB2E41000EC0633 /* AppDelegate.swift */; };
-		85FB20B81FB2E41000EC0633 /* menuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20B71FB2E41000EC0633 /* menuVC.swift */; };
+		85FB20B81FB2E41000EC0633 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20B71FB2E41000EC0633 /* MenuVC.swift */; };
 		85FB20BB1FB2E41000EC0633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FB20B91FB2E41000EC0633 /* Main.storyboard */; };
 		85FB20BD1FB2E41000EC0633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FB20BC1FB2E41000EC0633 /* Assets.xcassets */; };
 		85FB20C01FB2E41000EC0633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FB20BE1FB2E41000EC0633 /* LaunchScreen.storyboard */; };
 		85FB20CD1FB392F700EC0633 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20CC1FB392F700EC0633 /* MenuCell.swift */; };
+		85FB20CF1FB3CB0900EC0633 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20CE1FB3CB0900EC0633 /* Menu.swift */; };
+		85FB20D21FB3CCAA00EC0633 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB20D11FB3CCAA00EC0633 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85FB20B21FB2E41000EC0633 /* meal-iq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meal-iq.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FB20B51FB2E41000EC0633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85FB20B71FB2E41000EC0633 /* menuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuVC.swift; sourceTree = "<group>"; };
+		85FB20B71FB2E41000EC0633 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		85FB20BA1FB2E41000EC0633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85FB20BC1FB2E41000EC0633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85FB20BF1FB2E41000EC0633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85FB20C11FB2E41000EC0633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FB20CC1FB392F700EC0633 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		85FB20CE1FB3CB0900EC0633 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		85FB20D11FB3CCAA00EC0633 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		85FB20B41FB2E41000EC0633 /* meal-iq */ = {
 			isa = PBXGroup;
 			children = (
+				85FB20D01FB3CC8500EC0633 /* Services */,
 				85FB20C91FB391ED00EC0633 /* Controller */,
 				85FB20C81FB391E500EC0633 /* View */,
 				85FB20C71FB391DC00EC0633 /* Model */,
@@ -71,6 +76,7 @@
 		85FB20C71FB391DC00EC0633 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				85FB20CE1FB3CB0900EC0633 /* Menu.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,9 +92,17 @@
 		85FB20C91FB391ED00EC0633 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				85FB20B71FB2E41000EC0633 /* menuVC.swift */,
+				85FB20B71FB2E41000EC0633 /* MenuVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		85FB20D01FB3CC8500EC0633 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				85FB20D11FB3CCAA00EC0633 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85FB20B81FB2E41000EC0633 /* menuVC.swift in Sources */,
+				85FB20B81FB2E41000EC0633 /* MenuVC.swift in Sources */,
 				85FB20B61FB2E41000EC0633 /* AppDelegate.swift in Sources */,
+				85FB20CF1FB3CB0900EC0633 /* Menu.swift in Sources */,
 				85FB20CD1FB392F700EC0633 /* MenuCell.swift in Sources */,
+				85FB20D21FB3CCAA00EC0633 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

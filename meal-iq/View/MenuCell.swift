@@ -11,17 +11,13 @@ import UIKit
 class MenuCell: UITableViewCell {
     
     @IBOutlet weak var menuImage: UIImageView!
-    @IBOutlet weak var menuTiTle: UILabel!
+    @IBOutlet weak var menuTitle: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func updateViews(menu: Menu) {
+        menuImage.image = UIImage(named: menu.imageName)
+        menuTitle.text = menu.title
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  
 
 }
